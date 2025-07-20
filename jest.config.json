@@ -1,0 +1,16 @@
+
+{
+  "preset": "ts-jest",
+  "testEnvironment": "jest-environment-jsdom",
+  "globals": {
+    "ts-jest": {
+      "tsConfig": "tsconfig.json",
+      "jsx": "react-jsx"
+    }
+  },
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+}
+

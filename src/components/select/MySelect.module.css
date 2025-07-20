@@ -1,0 +1,29 @@
+.MySelect {
+  width: 200px;
+  padding: 10px;
+  margin-left: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+.MySelect:hover {
+  border-color: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.MySelect:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.MySelect .ant-select-selector {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.MySelect .ant-select-arrow {
+  color: #666;
+}/*# sourceMappingURL=MySelect.module.css.map */

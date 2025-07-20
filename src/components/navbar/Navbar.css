@@ -1,0 +1,147 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  border: 0;
+  transition: all 0.3s;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 100%;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: bisque;
+  background-color: rgb(83, 106, 125);
+  padding: 1.5rem;
+  z-index: 1000;
+}
+header nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header .nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .nav-header .logo {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+}
+header .nav-header .nav-btn {
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .nav-header .nav-btn .close-menu {
+  display: none;
+}
+header .navbar .nav-link {
+  font-size: 1.7rem;
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+header .navbar .nav-link:hover {
+  color: #000000;
+}
+header .navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff; /* Change this to your desired color */
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+header .navbar .nav-link:hover::after,
+header .navbar .nav-link:focus::after {
+  transform: scaleX(1);
+}
+header .nav-header .navbar {
+  display: flex;
+  gap: 2rem;
+}
+header .navbar {
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  flex-direction: column;
+}
+
+.navbar.active {
+  height: auto;
+}
+
+.btn-cart {
+  margin-left: 3rem;
+}
+
+header .nav-header .nav-btn.active .open-menu {
+  display: none;
+}
+
+header .nav-header .nav-btn.active .close-menu {
+  display: block;
+}
+
+.cart-item-count {
+  background-color: #21745b; /* Красный цвет фона */
+  color: rgb(255, 255, 255); /* Белый цвет текста */
+  border-radius: 50%; /* Круглая форма */
+  padding: 0.2em 0.6em; /* Внутренние отступы */
+  font-size: 0.6em; /* Размер шрифта */
+  position: absolute; /* Абсолютное позиционирование */
+  top: 40px; /* Смещение сверху */
+  right: 407px; /* Смещение справа */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  color: black;
+}
+
+@media screen and (min-width: 890px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .navbar {
+    all: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  header nav .nav-header .nav-btn {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

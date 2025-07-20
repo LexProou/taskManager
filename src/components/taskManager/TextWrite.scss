@@ -1,0 +1,39 @@
+.typewriter {
+    color: #2f4fa9;
+    margin-right: 26rem;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 890px) {
+
+    .typewriter {
+        color: #2f4fa9;
+        margin-right: -15rem;
+        margin-top: -1rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .typewriter {
+        color: #2f4fa9;
+        margin-left: -28rem;
+        margin-top: 6rem;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+
+    .typewriter {
+        color: #2f4fa9;
+        margin-left: -54rem;
+        margin-top: 6rem;
+        font-size: 1rem;
+    }
+
+}
